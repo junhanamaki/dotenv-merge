@@ -80,14 +80,14 @@ function loadKeyValues(filenames, onLoad) {
 }
 
 function backupDotenv() {
-  fs.copyFileSync('.env', 'env-merge.env.backup');
+  fs.copyFileSync('.env', 'dotenv-merge.env.backup');
 }
 
 function restoreDotenv() {
-  if (fs.existsSync('env-merge.env.backup')) {
-    fs.copyFileSync('env-merge.env.backup', '.env');
+  if (fs.existsSync('dotenv-merge.env.backup')) {
+    fs.copyFileSync('dotenv-merge.env.backup', '.env');
 
-    fs.unlinkSync('env-merge.env.backup');
+    fs.unlinkSync('dotenv-merge.env.backup');
   }
 }
 

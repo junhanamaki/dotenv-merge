@@ -1,0 +1,12 @@
+{
+  "name": "dotenv-merge",
+  "version": "1.0.0",
+  "description": "Ruby's dotenv gem like behaviour",
+  "license": "MIT",
+  "bin": {
+    "dotenv-merge": "./bin/dotenv-merge.js"
+  },
+  "files": [
+    "bin"
+  ]
+}
